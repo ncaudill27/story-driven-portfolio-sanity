@@ -9,8 +9,27 @@ export default {
       type: "string",
     },
     {
-      name: "hero"
-    }
+      name: "hero",
+      title: "Hero",
+      type: "mainImage",
+    },
+    {
+      name: "secondHero",
+      title: "Second Hero",
+      type: "object",
+      description:
+        'Optional image. If set this will turn into a "Dual Hero" on the frontend',
+      fields: [
+        {
+          name: "secondHeroImage",
+          type: "mainImage",
+        },
+      ],
+      options: {
+        collapsible: true,
+        collapsed: true,
+      },
+    },
     {
       name: "brief",
       title: "Brief Description",
@@ -37,6 +56,12 @@ export default {
       title: "Elements of shoot",
       type: "array",
       of: [{ type: "element" }],
+    },
+    {
+      name: "images",
+      title: "Images",
+      type: "array",
+      of: [{ type: "mainImage" }],
     },
   ],
 };

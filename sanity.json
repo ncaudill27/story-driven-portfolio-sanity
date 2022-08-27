@@ -13,11 +13,14 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "dashboard-widget-netlify",
-    "@sanity/dashboard"
+    "@sanity/dashboard",
+    "media"
   ],
   "env": {
     "development": {
-      "plugins": ["@sanity/vision"]
+      "plugins": [
+        "@sanity/vision"
+      ]
     }
   },
   "parts": [
