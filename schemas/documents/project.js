@@ -7,6 +7,27 @@ export default {
       name: "name",
       title: "Name",
       type: "string",
+      // TODO add 70 char maximum (if using Twitter)
+    },
+    {
+      name: "slug",
+      title: "Slug",
+      type: "slug",
+      option: {
+        source: "name",
+      },
+    },
+    {
+      name: "mediaType",
+      title: "Media Type",
+      type: "string",
+      options: {
+        list: [
+          { title: "Analog", value: "analog" },
+          { title: "Digital", value: "digital" },
+          { title: "Film", value: "film" },
+        ],
+      },
     },
     {
       name: "hero",
@@ -16,19 +37,7 @@ export default {
     {
       name: "secondHero",
       title: "Second Hero",
-      type: "object",
-      description:
-        'Optional image. If set this will turn into a "Dual Hero" on the frontend',
-      fields: [
-        {
-          name: "secondHeroImage",
-          type: "mainImage",
-        },
-      ],
-      options: {
-        collapsible: true,
-        collapsed: true,
-      },
+      type: "secondHero",
     },
     {
       name: "brief",
@@ -62,6 +71,9 @@ export default {
       title: "Images",
       type: "array",
       of: [{ type: "mainImage" }],
+      options: {
+        layout: "grid",
+      },
     },
   ],
 };

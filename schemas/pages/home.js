@@ -1,6 +1,3 @@
-import React from "react";
-import { AiOutlineHome } from "react-icons";
-
 export default {
   name: "homePage",
   title: "Home Page",
@@ -8,7 +5,7 @@ export default {
   fields: [
     {
       name: "heroBanner",
-      title: "Title",
+      title: "Hero Image",
       type: "mainImage",
     },
     {
