@@ -16,6 +16,10 @@ const contactPage = {
   title: "Contact Page",
   icon: AiOutlineContacts,
 };
+const collectionPages = {
+  type: "collectionPages",
+  title: "Collection Pages",
+};
 
 function SingletonListItem({ type, title, icon }) {
   return S.listItem()
@@ -30,6 +34,7 @@ export default () =>
     .items([
       SingletonListItem(homePage),
       SingletonListItem(contactPage),
+      SingletonListItem(collectionPages),
       S.divider(),
       S.listItem()
         .title("Projects")

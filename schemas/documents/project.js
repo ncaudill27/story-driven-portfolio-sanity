@@ -8,6 +8,10 @@ export default {
       title: "Name",
       type: "string",
       // TODO add 70 char maximum (if using Twitter)
+      validation: (Rule) => [
+        Rule.required(),
+        Rule.max(70).warning("Shorter names are usually better."),
+      ],
     },
     {
       name: "slug",
@@ -15,6 +19,7 @@ export default {
       type: "slug",
       option: {
         source: "name",
+        slugify: (input) => input.toLowerCase().replace(/\s+/g, "-"),
       },
     },
     {
@@ -28,11 +33,13 @@ export default {
           { title: "Film", value: "film" },
         ],
       },
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "hero",
       title: "Hero",
       type: "mainImage",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "secondHero",
@@ -45,7 +52,9 @@ export default {
       type: "decoratedText",
       description:
         "This will be the summary of the project seen from its preview on the home screen. In addition to being a value that will help SEO.",
+      validation: (Rule) => Rule.required(),
     },
+
     {
       name: "intro",
       title: "Intro",
@@ -59,12 +68,22 @@ export default {
       type: "decoratedText",
       description:
         "A thoughtful description of the people/place/thing being photographed.",
+      validation: (Rule) => Rule.required(),
     },
     {
       name: "elements",
       title: "Elements of shoot",
       type: "array",
       of: [{ type: "element" }],
+      validation: (Rule) =>
+        Rule.custom((elements) => {
+          return elements.length > 0
+            ? true
+            : {
+                message: "Add at least 3 elements for a better story view.",
+                elements,
+              };
+        }),
     },
     {
       name: "images",

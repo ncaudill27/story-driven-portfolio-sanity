@@ -6,6 +6,7 @@ import schemaTypes from "all:part:@sanity/base/schema-type";
 
 import home from "./pages/home";
 import contact from "./pages/contact";
+import collections from "./pages/collections";
 
 import project from "./documents/project";
 
@@ -24,6 +25,7 @@ export default createSchema({
   types: schemaTypes.concat([
     home,
     contact,
+    collections,
     project,
     mainImage,
     decoratedText,

@@ -22,7 +22,7 @@ export default {
   preview: {
     select: {
       title: "title",
-      media: "heroBanner",
+      media: "brettPortait",
     },
   },
 };
