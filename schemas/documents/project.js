@@ -89,7 +89,8 @@ export default {
       name: "images",
       title: "Images",
       type: "array",
-      of: [{ type: "mainImage" }],
+      description: "Drag and drop multiple image files below.",
+      of: [{ type: "image" }],
       options: {
         layout: "grid",
       },
