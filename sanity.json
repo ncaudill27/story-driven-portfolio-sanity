@@ -12,8 +12,8 @@
     "@sanity/default-layout",
     "@sanity/default-login",
     "@sanity/desk-tool",
-    "dashboard-widget-netlify",
     "@sanity/dashboard",
+    "dashboard-widget-netlify",
     "media"
   ],
   "env": {
@@ -33,6 +33,14 @@
     {
       "name": "part:@sanity/desk-tool/structure",
       "path": "./structure/deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/image/asset-sources",
+      "path": "./structure/assetSources.js"
+    },
+    {
+      "implements": "part:@sanity/form-builder/input/file/asset-sources",
+      "path": "./structure/assetSources.js"
     }
   ]
 }
