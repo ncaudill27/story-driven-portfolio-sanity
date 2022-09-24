@@ -3,6 +3,8 @@ import {
   AiOutlineCamera,
   AiOutlineContacts,
   AiOutlineHome,
+  AiOutlineLaptop,
+  AiOutlineVideoCamera,
 } from "react-icons/ai";
 
 const remoteURL = "https://brett-davis-sanity.netlify.app";
@@ -16,10 +18,21 @@ const contactPage = {
   title: "Contact Page",
   icon: AiOutlineContacts,
 };
-const collectionPages = {
-  type: "collectionPages",
-  title: "Collection Pages",
+const analogPage = {
+  type: "analogPage",
+  title: "Analog Page",
+  icon: AiOutlineCamera
 };
+const digitalPage = {
+  type: "digitalPage",
+  title: "Digital Page",
+  icon: AiOutlineLaptop
+}
+const filmPage = {
+  type: "filmPage",
+  title: "Film Page",
+  icon: AiOutlineVideoCamera
+}
 
 function SingletonListItem({ type, title, icon }) {
   return S.listItem()
@@ -34,7 +47,9 @@ export default () =>
     .items([
       SingletonListItem(homePage),
       SingletonListItem(contactPage),
-      SingletonListItem(collectionPages),
+      SingletonListItem(analogPage),
+      SingletonListItem(digitalPage),
+      SingletonListItem(filmPage),
       S.divider(),
       S.listItem()
         .title("Projects")
