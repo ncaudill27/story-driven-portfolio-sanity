@@ -1,3 +1,5 @@
+import minBlockCount from "../../validations/minimumBlockCount.utils";
+
 export default {
   name: "element",
   type: "object",
@@ -14,8 +16,7 @@ export default {
       type: "decoratedText",
       description:
         "This field will create a little blurb of text to populate the story view.",
-      validation: (Rule) =>
-        Rule.min(120).warning(
+      validation: (Rule) => Rule.custom(minBlockCount).warning(
           "Don't be shy, if users made it this far they find your content interesting. Give them what they want!"
         ),
     },
