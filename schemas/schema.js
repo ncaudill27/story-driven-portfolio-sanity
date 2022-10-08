@@ -16,7 +16,6 @@ import mainImage from "./objects/mainImage";
 import decoratedText from "./objects/decoratedText";
 import element from "./objects/element";
 import contactPoints from "./objects/contactPoints";
-import secondHero from "./objects/secondHero";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -35,6 +34,5 @@ export default createSchema({
     decoratedText,
     element,
     contactPoints,
-    secondHero,
   ]),
 });

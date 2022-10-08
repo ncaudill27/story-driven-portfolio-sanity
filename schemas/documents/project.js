@@ -36,17 +36,6 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      name: "hero",
-      title: "Hero",
-      type: "mainImage",
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: "secondHero",
-      title: "Second Hero",
-      type: "secondHero",
-    },
-    {
       name: "brief",
       title: "Brief Description",
       type: "decoratedText",
