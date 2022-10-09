@@ -8,7 +8,7 @@ export default {
     {
       name: "filmHero",
       title: "Film Hero Image",
-      type: "mainImage",
+      type: "image",
     },
     {
       name: "filmIntro",

@@ -6,7 +6,10 @@ export default {
     {
       name: "heroBanner",
       title: "Hero Image",
-      type: "mainImage",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: "leadParagraph",

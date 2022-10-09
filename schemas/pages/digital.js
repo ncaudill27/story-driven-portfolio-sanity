@@ -8,7 +8,7 @@ export default {
     {
       name: "digitalHero",
       title: "Digital Hero Image",
-      type: "mainImage",
+      type: "image",
     },
     {
       name: "digitalIntro",

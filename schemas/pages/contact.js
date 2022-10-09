@@ -6,7 +6,7 @@ export default {
     {
       name: "brettPortrait",
       title: "Self Portrait",
-      type: "mainImage",
+      type: "image",
     },
     {
       name: "bio",

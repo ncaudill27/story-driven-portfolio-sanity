@@ -1,3 +1,5 @@
+import HeroInput from "../../components/heroInput";
+
 export default {
   name: "project",
   title: "Project",
@@ -38,13 +40,8 @@ export default {
     {
       name: "hero",
       title: "Hero",
-      type: "mainImage",
-      validation: (Rule) => Rule.required(),
-    },
-    {
-      name: "secondHero",
-      title: "Second Hero",
-      type: "secondHero",
+      type: "image",
+      inputComponent: HeroInput,
     },
     {
       name: "brief",

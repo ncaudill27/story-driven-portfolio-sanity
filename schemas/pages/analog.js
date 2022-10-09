@@ -8,7 +8,10 @@ export default {
     {
       name: "analogHero",
       title: "Analog Hero Image",
-      type: "mainImage",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
     },
     {
       name: "analogIntro",
