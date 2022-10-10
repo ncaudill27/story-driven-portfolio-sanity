@@ -41,6 +41,7 @@ export default {
       name: "hero",
       title: "Hero",
       type: "image",
+      description: "This field acts as a preview and is set automatically.",
       inputComponent: HeroInput,
     },
     {
