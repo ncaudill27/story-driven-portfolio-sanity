@@ -1,4 +1,5 @@
 import HeroInput from "../../components/heroInput";
+import SlugInput from "../../components/slugInput";
 
 export default {
   name: "project",
@@ -18,11 +19,10 @@ export default {
     {
       name: "slug",
       title: "Slug",
-      type: "slug",
-      option: {
-        source: "name",
-        slugify: (input) => input.toLowerCase().replace(/\s+/g, "-"),
-      },
+      type: "string",
+      inputComponent: SlugInput,
+      readonly: true,
+      hidden: true,
     },
     {
       name: "mediaType",
