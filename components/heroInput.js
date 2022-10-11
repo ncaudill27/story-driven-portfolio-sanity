@@ -3,7 +3,6 @@ import { FormField } from "@sanity/base/components";
 import sanityClient from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
 import { Text, Tooltip, Card, Box } from "@sanity/ui";
-import { useRef } from "react";
 
 const client = sanityClient({
   projectId: "af3a1wel",
@@ -18,7 +17,11 @@ function urlFor(source) {
 
 function CustomHeroInput(props, ref) {
   const { type, markers, presence, compareValue } = props;
-  const heroImage = props.parent.images[0]?.asset;
+  let heroImage = null;
+
+  if (props.parent.images && props.parent.images.length > 0) {
+    heroImage = props.parent.images[0].asset;
+  }
 
   return (
     <FormField
