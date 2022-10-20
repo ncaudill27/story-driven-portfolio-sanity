@@ -6,15 +6,12 @@ export default {
   type: "document",
   fields: [
     {
-      name: "analogHero",
+      name: "hero",
       title: "Analog Hero Image",
       type: "image",
-      options: {
-        hotspot: true,
-      },
     },
     {
-      name: "analogIntro",
+      name: "intro",
       title: "Analog Intro",
       type: "decoratedText",
       validation: (Rule) => Rule.custom(minBlockCount).warning(),

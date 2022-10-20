@@ -11,6 +11,7 @@ export default {
         hotspot: true,
       },
     },
+    // TODO add introImage option? or choose random image?
     {
       name: "leadParagraph",
       title: "Lead Paragraph",

@@ -6,12 +6,12 @@ export default {
   type: "document",
   fields: [
     {
-      name: "filmHero",
+      name: "hero",
       title: "Film Hero Image",
       type: "image",
     },
     {
-      name: "filmIntro",
+      name: "intro",
       title: "Film Intro",
       type: "decoratedText",
       validation: (Rule) => Rule.custom(minBlockCount).warning(),
