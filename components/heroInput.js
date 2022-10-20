@@ -19,7 +19,7 @@ function CustomHeroInput(props, ref) {
   const { type, markers, presence, compareValue } = props;
   let heroImage = null;
 
-  if (props.parent.images && props.parent.images.length > 0) {
+  if (props?.parent?.images && props.parent.images.length > 0) {
     heroImage = props.parent.images[0].asset;
   }
 
