@@ -1,5 +1,4 @@
 import HeroInput from "../../components/heroInput";
-import SlugInput from "../../components/slugInput";
 
 export default {
   name: "project",
@@ -15,14 +14,6 @@ export default {
         Rule.required(),
         Rule.max(70).warning("Shorter names are usually better."),
       ],
-    },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "string",
-      inputComponent: SlugInput,
-      readonly: true,
-      hidden: true,
     },
     {
       name: "mediaType",
