@@ -4,7 +4,7 @@ export default {
   type: "document",
   fields: [
     {
-      name: "brettPortrait",
+      name: "contactImage",
       title: "Self Portrait",
       type: "image",
     },
@@ -22,7 +22,7 @@ export default {
   preview: {
     select: {
       title: "title",
-      media: "brettPortait",
+      media: "contactImage",
     },
   },
 };

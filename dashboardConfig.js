@@ -32,12 +32,12 @@ export default {
         data: [
           {
             title: "Sanity CMS GitHub repo",
-            value: "https://github.com/ncaudill27/brett-davis-sanity",
+            value: "TODO",
             category: "Code",
           },
           {
             title: "Frontend",
-            value: "https://sanity-gatsby-portfolio-web-oou6ya68.netlify.app",
+            value: "TODO",
             category: "apps",
           },
         ],

@@ -1,18 +1,20 @@
 {
-  "name": "brett-davis-sanity",
-  "private": true,
+  "name": "story-driven-portfolio-sanity",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
   "author": "Nelson Caudill <nelson.a.caudill@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
     "graphql-deploy": "sanity graphql deploy --playground"
   },
   "keywords": [
-    "sanity"
+    "sanity",
+    "portfolio",
+    "template"
   ],
   "dependencies": {
     "@sanity/base": "^2.31.0",

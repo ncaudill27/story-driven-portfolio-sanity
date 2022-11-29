@@ -7,7 +7,7 @@ import {
   AiOutlineVideoCamera,
 } from "react-icons/ai";
 
-const remoteURL = "https://brett-davis-sanity.netlify.app";
+const remoteURL = "TODO";
 const localURL = "http://localhost:3333";
 const previewURL =
   window.location.hostname === "localhost" ? localURL : remoteURL;
@@ -21,18 +21,18 @@ const contactPage = {
 const analogPage = {
   type: "analogPage",
   title: "Analog Page",
-  icon: AiOutlineCamera
+  icon: AiOutlineCamera,
 };
 const digitalPage = {
   type: "digitalPage",
   title: "Digital Page",
-  icon: AiOutlineLaptop
-}
+  icon: AiOutlineLaptop,
+};
 const filmPage = {
   type: "filmPage",
   title: "Film Page",
-  icon: AiOutlineVideoCamera
-}
+  icon: AiOutlineVideoCamera,
+};
 
 function SingletonListItem({ type, title, icon }) {
   return S.listItem()
